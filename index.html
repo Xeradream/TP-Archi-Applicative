@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Liste de Tâches Évoluée</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Ma Liste de Tâches</h1>
+    <div id="task-form"></div>
+
+    <div id="filter-container">
+      <label for="filter">Filtrer par catégorie :</label>
+      <select id="category-filter">
+        <option value="all">Toutes</option>
+        <option value="travail">Travail</option>
+        <option value="maison">Maison</option>
+        <option value="divers">Divers</option>
+      </select>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="model.js"></script>
+  <script src="view.js"></script>
+  <script src="controller.js"></script>
+</body>
+</html>
